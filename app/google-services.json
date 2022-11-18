@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "345098713110",
+    "project_id": "mintmarketplace-91994",
+    "storage_bucket": "mintmarketplace-91994.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:345098713110:android:397916353ab30047025d37",
+        "android_client_info": {
+          "package_name": "com.example.mintmarketplace"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "345098713110-0k3277crtnah4e88licj4570rgbdvotq.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCoK3WV_0Wl7zYEkvOz68I9au5YREtWqTs"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "345098713110-0k3277crtnah4e88licj4570rgbdvotq.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
