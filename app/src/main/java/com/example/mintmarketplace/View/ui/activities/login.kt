@@ -39,8 +39,11 @@ class login:AppCompatActivity() {
         recoverytext.setOnClickListener {
             startActivity(Intent(this, RecoveryActivity::class.java))
         }
-        loginbutton.setOnClickListener {
+/*        loginbutton.setOnClickListener {
             startActivity(Intent(this, HomeActivity::class.java))
+        }*/
+        loginbutton.setOnClickListener {
+            startActivity(Intent(this, InicioActivity::class.java))
         }
     }
 
