@@ -17,7 +17,6 @@ class RecoveryActivity: AppCompatActivity() {
     lateinit var recoverybutton: Button
     private lateinit var firebaseAuth: FirebaseAuth
 
-    @SuppressLint("MissingInflatedId")
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_recovery)
