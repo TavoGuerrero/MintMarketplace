@@ -4,39 +4,28 @@ import android.os.Bundle
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
-import android.widget.TextView
 import androidx.fragment.app.Fragment
-import androidx.lifecycle.ViewModelProvider
-import com.example.mintmarketplace.databinding.FragmentHomeBinding
+import androidx.recyclerview.widget.GridLayoutManager
+import androidx.recyclerview.widget.LinearLayoutManager
+import androidx.recyclerview.widget.RecyclerView
+import com.example.mintmarketplace.R
+import com.example.mintmarketplace.View.ui.activities.HomeActivity
+import com.example.mintmarketplace.View.ui.activities.InicioActivity
+import com.example.mintmarketplace.View.ui.activities.ui.home.placeholder.PlaceholderContent
 
 class HomeFragment : Fragment() {
 
-    private var _binding: FragmentHomeBinding? = null
-
-    // This property is only valid between onCreateView and
-    // onDestroyView.
-    private val binding get() = _binding!!
-
     override fun onCreateView(
-        inflater: LayoutInflater,
-        container: ViewGroup?,
+        inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
-    ): View {
-        val homeViewModel =
-            ViewModelProvider(this).get(HomeViewModel::class.java)
+    ): View? {
+        val view = inflater.inflate(R.layout.fragment_categorias_list, container, false)
+        val categoriasList = view.findViewById<RecyclerView>(R.id.list)
+        categoriasList.layoutManager = LinearLayoutManager(context)
+        categoriasList.adapter = MyCategoriasRecyclerViewAdapter(PlaceholderContent.ITEMS,
+            this.activity as InicioActivity
+        )
 
-        _binding = FragmentHomeBinding.inflate(inflater, container, false)
-        val root: View = binding.root
-
-        val textView: TextView = binding.textHome
-        homeViewModel.text.observe(viewLifecycleOwner) {
-            textView.text = it
-        }
-        return root
-    }
-
-    override fun onDestroyView() {
-        super.onDestroyView()
-        _binding = null
+        return view
     }
 }

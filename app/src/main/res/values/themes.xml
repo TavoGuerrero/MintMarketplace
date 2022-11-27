@@ -4,7 +4,7 @@
         <!-- Primary brand color. -->
         <item name="colorPrimary">@color/purple_light</item>
         <item name="colorPrimaryDark">@color/blue_dark</item>
-        <item name="colorAccent">@color/beige</item>
+        <item name="colorAccent">@color/purple_light</item>
         <!-- Customize your theme here. -->
     </style>
 </resources>

@@ -13,6 +13,14 @@
         android:theme="@style/Theme.MintMarketplace"
         tools:targetApi="31">
         <activity
+            android:name=".View.ui.activities.ProductosActivity"
+            android:parentActivityName="com.example.mintmarketplace.View.ui.activities.InicioActivity"
+            android:exported="false">
+            <meta-data
+                android:name="android.app.lib_name"
+                android:value="" />
+        </activity>
+        <activity
             android:name=".View.ui.activities.InicioActivity"
             android:exported="false"
             android:label="@string/title_activity_inicio">
